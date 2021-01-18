@@ -2,10 +2,7 @@
     <li *ngFor="let num of ' '.repeat(puntuacion).split('')" class="mr-2 text-danger">
         <i class="fas fa-star"></i>
     </li>
-</ul>
-
-<ul *ngIf="puntuacion < 5">
-    <li *ngFor="let num of ' '.repeat(estrellasVacias).split('')">
+    <li *ngFor="let num of vacias" class="mr-2 text-danger">
         <i class="far fa-star"></i>
     </li>
 </ul>

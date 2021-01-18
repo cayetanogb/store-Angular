@@ -8,22 +8,16 @@ import { Component, Input, OnInit } from '@angular/core';
 export class EstrellaComponent implements OnInit {
 
   @Input() puntuacion: number;
+  vacias: Array<boolean>;
 
   constructor() { }
 
   ngOnInit(): void {
-    let estrellas = new Array(this.puntuacion);
+    this.vacias = new Array(5 - this.puntuacion);
+
+    for (let i = 0; i < this.vacias.length; i++) {
+      this.vacias[i] = true;
+    }
   }
-
-  /*
-  estrellasVacias = new Array();
-  let i;
-
-  for (i = 0; i < Productos; i++) {
-    let num;
-    num = 5 - Producto[i].puntuacion;
-
-    estrellasVacias.push(num);    
-  }*/
 
 }
