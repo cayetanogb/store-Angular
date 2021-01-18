@@ -1,0 +1,11 @@
+<ul class="d-flex flex-row list-unstyled">
+    <li *ngFor="let num of ' '.repeat(puntuacion).split('')" class="mr-2 text-danger">
+        <i class="fas fa-star"></i>
+    </li>
+</ul>
+
+<ul *ngIf="puntuacion < 5">
+    <li *ngFor="let num of ' '.repeat(estrellasVacias).split('')">
+        <i class="far fa-star"></i>
+    </li>
+</ul>

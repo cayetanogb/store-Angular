@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col" *ngFor="let producto of listaProd">
+        <app-producto
+        [id]="producto.id"
+        [imagen]="producto.imagen"
+        [nombre]="producto.nombre"
+        [puntuacion]="producto.puntuacion"
+        [precio]="producto.precio">
+        </app-producto>
+    </div>
+</div>
